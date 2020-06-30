@@ -36,6 +36,7 @@ from common import logger
 from common import translator
 
 import extra#
+import glwarp
 
 
 
@@ -192,6 +193,11 @@ class App(Gtk.Application):
 		self.window.connect('destroy',self.on_window_destroy)
 		#self.window.connect("destroy", Gtk.main_quit)
 		
+		
+		# GL
+		gl_canva = xml.get_object('glcanva')
+		self.glw = glwarp.GLWarper(gl_canva)
+
 
 		### test module function and class instance
 		logger.log_debug(LOG12.format(extra.TEMPLATE_CONSTANTE))
