@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-28 22:34+0200\n"
+"PO-Revision-Date: 2020-07-18 23:59+0700\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.6\n"
+
+msgid "MSG1"
+msgstr "This is the blue java ,a dancing java"
+
+msgid "MSG2"
+msgid_plural "MSG2s"
+msgstr[0] "This is one song"
+msgstr[1] "This is many songs"
+
+msgid "CFG1"
+msgstr "It's Vienna dance"
+
+msgid "CDM1"
+msgstr "This is Spanish music"
+
+msgid "OPT1"
+msgstr "This is samba"
