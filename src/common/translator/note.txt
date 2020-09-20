@@ -1,0 +1,14 @@
+multilingual translation, internationalization, localization.
+
+internationalization (I18N)
+localization (L10N)
+
+Allows to represent a number or text in the language of the user.
+
+For example a float will be written with a period if the user is English or with a comma if it is French,
+same for the format of the dates
+
+language code used is an ISO 639 two-letter language code, with ISO 3166 two-letter country code.
+example: pt_BR for Portuguese in Brazil 
+example: fr_FR for French language in France country
+
