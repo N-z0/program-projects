@@ -197,6 +197,15 @@ def get_cfg(default_initfile,system_initfile,user_initfile):
 	cfg.add_choice('-tv','--terminal_verbosity',int,1,(0,1,2,3,4,5),'output verbosity level','VERBOSITY','terminal')
 	cfg.add_choice('-sv','--syslog_verbosity',int,1,(0,1,2,3,4,5),'output verbosity level','VERBOSITY','syslog')
 	
+	cfg.add_valu('-s','--screen',int,1,'define which screen should be used','NUMBER','DISPLAY','screen')
+	cfg.add_positive_flag('-f','--fullscreen','display in full screen mode','DISPLAY','fullscreen')
+	cfg.add_negative_flag('-w','--window','display inside window','DISPLAY','fullscreen')
+	cfg.add_positive_flag('-m','--maximize','maximize the window on the screen','DISPLAY','maximize')
+
+	cfg.add_valu('-wp','--position',int,2,'set window position',('x','y'),'DISPLAY','position')
+	cfg.add_valu('-ws','--size',int,2,'set window size',('x','y'),'DISPLAY','size')
+	cfg.add_valu('-t','--title',str,1,'set window title','TITLE','DISPLAY','title')
+	
 	
 	### os.path.isfile os.path.isdir etc can be use for check if filepath exist
 	### but we will have to check their existence again later, before starting to use them
