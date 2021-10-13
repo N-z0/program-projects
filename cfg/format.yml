@@ -52,3 +52,64 @@ VERBOSITY:
    default: 0
    help: "output verbosity level"
 
+
+DISPLAY:
+   
+ - name: screen
+   category: valu
+   shortflag: s
+   longflag: screen
+   type: int
+   qantum: 1
+   default: 0
+   help: "define which screen should be used"
+   symbols: "NUMBER"
+   
+ - name: fullscreen
+   category: negativ_flag
+   shortflag: w
+   longflag: window
+   help: "display inside window"
+   
+ - name: fullscreen
+   category: positiv_flag
+   shortflag: f
+   longflag: fullscreen
+   help: "display in full screen mode"
+   
+ - name: maximize
+   category: positiv_flag
+   shortflag: m
+   longflag: maximize
+   help: "maximize the window on the screen"
+   
+ - name: position
+   category: valu
+   shortflag: wp
+   longflag: position
+   type: int
+   qantum: 2
+   default: [100,100]
+   help: "set window position"
+   symbols: "(x,y)"
+   
+ - name: size
+   category: valu
+   shortflag: ws
+   longflag: size
+   type: int
+   qantum: 2
+   default: [400,300]
+   help: "set window size"
+   symbols: "(x,y)"
+   
+ - name: title
+   category: valu
+   shortflag: t
+   longflag: title
+   type: str
+   qantum: 1
+   default: "prog title"
+   help: "set window title"
+   symbols: "TITLE"
+
