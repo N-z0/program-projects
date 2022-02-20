@@ -3,13 +3,32 @@ logs systems are setup
 starting
 ending
 
-main module class instance
-main template constante={}
-application run fonction finished
+set the UI interface
+loading translation domain
+translation domain not found
+load ui file: {}
+setup main window
+load default icon file: {}
+set window position: {},{}
+set window size: {},{}
+set fullscreen
+display on device: {},{}
+maximize window
+pop help window
+toggle menu bar
+toggle tool bar
+toggle status bar
+unrealize
+close main window
+on idle
+on timer
+on mainloop
+set statusbar:{}
 
+main template constante={}
 main template method qantum:{}
-advanced main instance qantum:{}
-advanced main method qantum:{}
+advanced main instance argument:{}
+advanced main method index:{}
 valu not equal zero
 valu greater then 1
 valu equal 0
