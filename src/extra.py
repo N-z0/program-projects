@@ -7,7 +7,7 @@
 
 __doc__ = "an importable additional supplement for the main core module"#information describing the purpose of this module
 __status__ = "Prototype"#should be one of 'Prototype' 'Development' 'Production' 'Deprecated' 'Release'
-__version__ = "4.0.0"# version number,date or about last modification made compared to the previous version
+__version__ = "4.1.0"# version number,date or about last modification made compared to the previous version
 __license__ = "public domain"# ref to an official existing License
 #__copyright__ = "Copyright 2000, The X Project"
 __date__ = "2016-02-25"#started creation date / year month day
@@ -33,17 +33,15 @@ EXTRA_CONSTANTE=3 # some description
 def template_fonction():
 	"""information describing the use of this function"""
 	#print( "My name is {0[name]}".format(dict(name='Fred')) )
-	time.sleep(3)
-	input("Press Enter to continue")
+	#time.sleep(3)
+	#input("Press Enter to continue")
 	return True
 
 
 def log_test():
 	"""information describing the use of this function"""
-	logger.log_debug(17)
-	logger.log_info(18)
-	logger.log_warning(19)
-	logger.log_error(20)
-	logger.log_critical(21)
-
-
+	logger.log_debug(36)
+	logger.log_info(37)
+	logger.log_warning(38)
+	logger.log_error(39)
+	logger.log_critical(40)

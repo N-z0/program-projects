@@ -7,7 +7,7 @@
 
 __doc__ = "This is the program centerpiece,but need to be imported by other modules to be used"#information describing the purpose of this module
 __status__ = "Prototype"#should be one of 'Prototype' 'Development' 'Production' 'Deprecated' 'Release'
-__version__ = "4.0.0"# version number,date or about last modification made compared to the previous version
+__version__ = "4.0.1"# version number,date or about last modification made compared to the previous version
 __license__ = "public domain"# ref to an official existing License
 #__copyright__ = "Copyright 2000, The X Project"
 __date__ = "2016-02-25"#started creation date / year month day
@@ -78,7 +78,7 @@ class Main :
 		"""information describing the use of this method"""
 		while qantum :
 			qantum-=1
-			logger.log_info(10,[qantum])
+			logger.log_info(29,[qantum])
 		extra.log_test()
 
 
@@ -88,7 +88,7 @@ class Advanced_Main(Main) :
 		"""information describing the use of this method"""
 		Main.__init__(self,main_template_argument)
 
-		logger.log_info( 11,[adv_main_template_argument] )
+		logger.log_info( 30,[adv_main_template_argument] )
 		self.template_attribut=adv_main_template_argument*"w"
 		# comment
 		self.valu_list=range(len(self.template_attribut))
@@ -98,13 +98,13 @@ class Advanced_Main(Main) :
 		extra.template_fonction()
 		for index in range(qantum) :
 			# comment
-			logger.log_info(12,[index])
+			logger.log_info(31,[index])
 			valu=self.valu_list[index]
 			if valu!=0 :
-				logger.log_info(13)
+				logger.log_info(32)
 			elif valu>=1 :
-				logger.log_info(14)
+				logger.log_info(33)
 			elif valu==0 :
-				logger.log_info(15)
+				logger.log_info(34)
 			else :
 				pass
