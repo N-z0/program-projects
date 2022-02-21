@@ -1,0 +1,35 @@
+#  MTL File
+# Material Count: 2
+
+#
+#TRANSPARENCY,transparence,translucide,alpha
+#RESTITUTIOIN rgb ,color,diffusion
+#		<AMBIANT red="0.5" green="0.5" blue="0.5" />
+#		<DIFFUSE red="0.5" green="0.5" blue="0.5" />
+#		<SPECULAR red="0.5" green="0.5" blue="0.5" />
+#RADIANCE rgb , emit,light
+#REFLEXTION, brillance ,reflexion speculaire ,reflexion difuse,reflet,(rugueus,mat,metal,miroir)
+#REFRACTION ,lumière change de direction lorsqu'elle passe d'un milieu transparent à un autre
+#DIFFRACTION interference lumineuse
+#DISPERTION ,prisme, arc en ciel
+#
+
+
+newmtl MateriaZ
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.058428 0.492846
+Ks 0.500000 0.255305 0.007042
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/jlc930/Documents/PERSO/ressources/pictures/textures/4070.jpg
+
+newmtl MaterialA
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.018750 0.640000 0.003177
+Ks 0.063044 0.097205 0.500000
+Ni 1.000000
+d 1.000000
+illum 2

@@ -1,0 +1,53 @@
+### scene description
+###
+### comment lines with #
+### tab characters are strictly prohibited for indentation
+
+
+SOUNDS:
+   
+ - name: 'cs'
+   source: 'world/scenes/models/common/sounds/others/sword'
+   volumes: [1,0.1]
+   pitch: 2.0
+   loop: True
+   angles: [45.,90.]
+   spreading: 3
+
+
+MODELS:
+   
+ - name: 'kc'
+   mesh:
+      path: "world/scenes/models/specific/kubic/model"
+      part: "kc"
+      groups: [1,3,0,5]# how many meshes by groups
+   textures:
+      emit: "world/scenes/models/common/textures/emit"
+      ao: "world/scenes/models/specific/kubic/ao"
+      albedo: "world/scenes/models/specific/kubic/albedo"
+      smoothness: "world/scenes/models/specific/kubic/smoothness"
+      metallic: "world/scenes/models/common/textures/metallic"
+      normal: "world/scenes/models/specific/kubic/normals"
+   materials:
+       - name: "matlib1"
+         path: "world/scenes/models/common/materials/matlib"
+       - name: "matlib2"
+         path: "world/scenes/models/common/materials/matlib"
+
+
+OBJECT:
+   
+ - class: 'object'
+   position: [0.0,0.0,0.0]
+   orientation: [0.0,90.0,0.0]
+   scale: [0.5,0.5,0.5]
+   attributes:
+      name: 'KC0'
+      type: 'gyro'
+      model: ['kc']
+      sound: ["cs"]
+      speed: 10.
+      mass: 1
+      box: 10
+   

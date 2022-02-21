@@ -1,0 +1,29 @@
+### MTL lib File
+
+
+newmtl mat1
+Ke 0.1 0.01 0.01 0.0
+Ka 1.0
+Kd 0.9 0.3 0.3 1.0
+Ns 0.5
+
+newmtl xm
+Kd 0.8 0.8 0.8 1.0
+Pr 0.7
+
+newmtl matx
+Ka 0.010000 0.500000 1.0000
+Kd 0.000000 0.500000 0.00000
+Ks 0.500000 0.500000 0.500000
+Ke 0.30000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Untitled.png
+
+newmtl mt
+Ke 0.1 0.01 0.01 0.0
+Ka 1.0
+Kd 0.3 0.7 0.7 1.0
+Ks 0.1
+

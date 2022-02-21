@@ -1,0 +1,57 @@
+### scene description
+###
+### comment lines with #
+### tab characters are strictly prohibited for indentation
+
+
+SOUNDS:
+   
+
+
+MODELS:
+   
+ - name: 'ground'
+   mesh:
+      path: "world/scenes/models/specific/ground/model"
+      part: "plane"
+   textures:
+      emit: "world/scenes/models/common/textures/emit"
+      ao: "world/scenes/models/specific/ground/ao"
+      albedo: "world/scenes/models/specific/ground/albedo"
+      smoothness: "world/scenes/models/specific/ground/smoothness"
+      metallic: "world/scenes/models/common/textures/metallic"
+      normal: "world/scenes/models/specific/ground/normals"
+   materials:
+       - name: "matlib1"
+         path: "world/scenes/models/common/materials/matlib"
+
+
+
+OBJECT:
+ - class: 'object'
+   position: [0.0,0.0,0.0]
+   orientation: [0.0,0.0,0.0]
+   scale: [10.0,10.0,1.0]
+   active: True
+   attributes:
+      name: 'g0'
+      type: 'solid'
+      model: 'ground'
+      mass: 10
+      box: 10
+   children:
+       - class: 'file'
+         position: [0.0,0.1,0.0]
+         orientation: [0.0,0.0,0.0]
+         scale: [0.0333,0.0333,0.0333]
+         attributes:
+            path: "world/scenes/items/kubic"
+            name: 'glob1'
+       - class: 'object'
+         position: [0.0,0.3,0.0]
+         orientation: [0.0,0.0,0.0]
+         scale: [0.02,0.02,0.02]
+         active: True
+         attributes:
+            name: 'g1'
+            type: 'empty'
