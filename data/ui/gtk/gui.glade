@@ -12,14 +12,14 @@ Author: Nz0
 
 -->
 <interface>
-  <requires lib="gtk+" version="3.4"/>
+  <requires lib="gtk+" version="3.0"/>
   <!-- interface-license-type all_permissive -->
   <!-- interface-name common UI -->
   <!-- interface-description A common graphic interface for programs windows. -->
   <!-- interface-copyright 2020 -->
   <!-- interface-authors Nz0 -->
   <object class="GtkAboutDialog" id="about_window">
-    <property name="can_focus">False</property>
+    <property name="can_focus">True</property>
     <property name="type_hint">dialog</property>
     <property name="program_name">Program</property>
     <property name="version">0.0.0</property>
@@ -31,12 +31,12 @@ Author: Nz0
     </child>
     <child internal-child="vbox">
       <object class="GtkBox">
-        <property name="can_focus">False</property>
+        <property name="can_focus">True</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox">
-            <property name="can_focus">False</property>
+            <property name="can_focus">True</property>
             <property name="layout_style">end</property>
           </object>
           <packing>
@@ -52,23 +52,24 @@ Author: Nz0
     </child>
   </object>
   <object class="GtkApplicationWindow" id="main_window">
-    <property name="can_focus">False</property>
+    <property name="can_focus">True</property>
     <property name="events"/>
     <property name="destroy_with_parent">True</property>
     <signal name="delete-event" handler="on_delete" swapped="no"/>
+    <signal name="realize" handler="setup_main_window" swapped="no"/>
     <child type="titlebar">
       <placeholder/>
     </child>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can_focus">True</property>
         <property name="events"/>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkMenuBar" id="menu_bar">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can_focus">True</property>
             <property name="events"/>
             <property name="halign">start</property>
             <property name="valign">start</property>
@@ -77,18 +78,18 @@ Author: Nz0
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">File Menu</property>
                 <property name="label" translatable="yes">File</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <child>
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-new</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -97,7 +98,7 @@ Author: Nz0
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-open</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -105,14 +106,14 @@ Author: Nz0
                     <child>
                       <object class="GtkSeparatorMenuItem">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-save</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -121,7 +122,7 @@ Author: Nz0
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-save-as</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -129,14 +130,14 @@ Author: Nz0
                     <child>
                       <object class="GtkSeparatorMenuItem" id="sep">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-quit</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="tooltip_text" translatable="yes">Exit program</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
@@ -151,18 +152,18 @@ Author: Nz0
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">Edit Menu</property>
                 <property name="label" translatable="yes">Edit</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <child>
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-cut</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -171,7 +172,7 @@ Author: Nz0
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-copy</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -180,7 +181,7 @@ Author: Nz0
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-paste</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -189,7 +190,7 @@ Author: Nz0
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-delete</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </object>
@@ -201,18 +202,18 @@ Author: Nz0
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">View Menu</property>
                 <property name="right_justified">True</property>
                 <property name="label" translatable="yes">View</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <child>
                       <object class="GtkMenuItem">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="tooltip_text" translatable="yes">Show or hide menu bar</property>
                         <property name="label" translatable="yes">menu bar</property>
                         <property name="use_underline">True</property>
@@ -222,7 +223,7 @@ Author: Nz0
                     <child>
                       <object class="GtkMenuItem">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="tooltip_text" translatable="yes">Show or hide tool bar</property>
                         <property name="label" translatable="yes">tool bar</property>
                         <property name="use_underline">True</property>
@@ -232,7 +233,7 @@ Author: Nz0
                     <child>
                       <object class="GtkMenuItem">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="tooltip_text" translatable="yes">Show or hide statu bar</property>
                         <property name="label" translatable="yes">status bar</property>
                         <property name="use_underline">True</property>
@@ -246,20 +247,20 @@ Author: Nz0
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="events"/>
                 <property name="tooltip_text" translatable="yes">Help Menu</property>
                 <property name="label" translatable="yes">Help</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <property name="tearoff_title">fff</property>
                     <child>
                       <object class="GtkImageMenuItem">
                         <property name="label">gtk-about</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                         <signal name="activate" handler="on_about_dialog" swapped="no"/>
@@ -279,14 +280,14 @@ Author: Nz0
         <child>
           <object class="GtkToolbar" id="tool_bar">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can_focus">True</property>
             <property name="events"/>
             <property name="halign">start</property>
             <property name="valign">start</property>
             <child>
               <object class="GtkToolButton">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="label" translatable="yes">open</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-index</property>
@@ -299,7 +300,7 @@ Author: Nz0
             <child>
               <object class="GtkToggleToolButton">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">MSG1</property>
                 <property name="stock_id">gtk-clear</property>
@@ -312,7 +313,7 @@ Author: Nz0
             <child>
               <object class="GtkSeparatorToolItem">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="is_important">True</property>
               </object>
               <packing>
@@ -323,7 +324,7 @@ Author: Nz0
             <child>
               <object class="GtkToolButton">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="label" translatable="yes">view</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-execute</property>
@@ -341,14 +342,32 @@ Author: Nz0
           </packing>
         </child>
         <child>
-          <object class="GtkImage">
+          <object class="GtkGLArea" id="glcanva">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="stock">gtk-missing-image</property>
-            <property name="icon_size">6</property>
+            <property name="app_paintable">True</property>
+            <property name="can_focus">True</property>
+            <property name="events">GDK_POINTER_MOTION_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK | GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK | GDK_FOCUS_CHANGE_MASK | GDK_SCROLL_MASK | GDK_SMOOTH_SCROLL_MASK</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="has_depth_buffer">True</property>
+            <property name="auto_render">False</property>
+            <signal name="button-press-event" handler="on_button_press" swapped="no"/>
+            <signal name="button-release-event" handler="on_button_release" swapped="no"/>
+            <signal name="create-context" handler="on_context" swapped="no"/>
+            <signal name="enter-notify-event" handler="on_enter" swapped="no"/>
+            <signal name="focus-in-event" handler="on_focus_in" swapped="no"/>
+            <signal name="focus-out-event" handler="on_focus_out" swapped="no"/>
+            <signal name="key-press-event" handler="on_key_press" swapped="no"/>
+            <signal name="key-release-event" handler="on_key_release" swapped="no"/>
+            <signal name="leave-notify-event" handler="on_leave" swapped="no"/>
+            <signal name="motion-notify-event" handler="on_mouse_move" swapped="no"/>
+            <signal name="realize" handler="setup_gl_area" swapped="no"/>
+            <signal name="render" handler="on_render" swapped="no"/>
+            <signal name="resize" handler="on_resize" swapped="no"/>
+            <signal name="scroll-event" handler="on_mouse_scroll" swapped="no"/>
           </object>
           <packing>
-            <property name="expand">True</property>
+            <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">2</property>
           </packing>
@@ -356,7 +375,7 @@ Author: Nz0
         <child>
           <object class="GtkStatusbar" id="status_bar">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can_focus">True</property>
             <property name="events"/>
             <property name="margin_start">10</property>
             <property name="margin_end">10</property>
@@ -365,7 +384,7 @@ Author: Nz0
             <child>
               <object class="GtkImage">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="stock">gtk-help</property>
               </object>
               <packing>
@@ -377,7 +396,7 @@ Author: Nz0
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can_focus">True</property>
                 <property name="label" translatable="yes">statusBar</property>
               </object>
               <packing>
