@@ -14,24 +14,74 @@ set window size: {},{}
 set fullscreen
 display on device: {},{}
 maximize window
+setup OpenGL area
+OpenGL area error: {}
+required OpenGL version: {}.{}
+OpenGL legacy: {}
+alpha:{}
+depth_buffer:{}
+stencil_buffer:{}
+set OpenGL context
 pop help window
 toggle menu bar
 toggle tool bar
 toggle status bar
+enter OpenGL area
+leave OpenGL area
+OpenGL area focused
+OpenGL area unfocused
+render OpenGL area
+resize OpenGL area
+mouse movement
+mouse scroll
+button pressed
+button released
+key_pressed
+key_released
 unrealize
 close main window
-on idle
-on timer
-on mainloop
+main computation
+hide cursor pointer
 set statusbar:{}
 
-main template constante={}
-main template method qantum:{}
-advanced main instance argument:{}
-advanced main method index:{}
-valu not equal zero
-valu greater then 1
-valu equal 0
+
+
+
+unknow key name: {}
+unknow button name: {}
+unknow axe name: {}
+unknow pointer name: {}
+unknow device name: {}
+controller {} assigned to {} functions
+assign controller {} to function
+ignore controller {} recurrence
+
+
+
+
+
+
+
+
+
+
+
+
+starting on frame {}
+children not allowed for importing file {}
+unknow item class {}
+
+
+
+
+
+
+
+debug log
+info log
+warning log
+error log
+critical log
 
 debug log lib
 info log lib
